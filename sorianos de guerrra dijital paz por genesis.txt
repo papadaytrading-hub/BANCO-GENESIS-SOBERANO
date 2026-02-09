@@ -1,0 +1,42 @@
+import streamlit as st
+st.set_page_config(page_title="BANCO GÉNESIS", layout="wide")
+st.markdown("<h1 style='color: #00ffff; text-align: center;'>??? BANCO GÉNESIS</h1>", unsafe_allow_html=True)
+st.write("### SISTEMA OPERATIVO HUMANO | AUTORIDAD: 78921408J")
+st.info("BIZUM: 603924829 | APORTE SOBERANO: 480€")
+st.success("Web activa desde Bilbao. Nodo Alfa Frank-Aimar.")import streamlit as st
+
+st.set_page_config(page_title="BANCO GÉNESIS S.O.H.", layout="wide")
+
+st.markdown("""
+    <style>
+    .stApp { background-color: #05000a; color: #ffffff; }
+    .genesis-box {
+        border: 3px solid #a020f0;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 0 25px #a020f0, inset 0 0 20px #00ffff;
+    }
+    h1 { color: #00ffff; text-shadow: 0 0 15px #00ffff; text-align: center; }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown("<div class='genesis-box'>", unsafe_allow_html=True)
+st.markdown("<h1>??? BANCO GÉNESIS & ONG GLOBAL</h1>", unsafe_allow_html=True)
+st.write("### SISTEMA OPERATIVO HUMANO | AUTORIDAD: 78921408J")
+
+col1, col2 = st.columns(2)
+with col1:
+    st.subheader("?? PASARELA DE PODER")
+    st.write("**SUSCRIPCIÓN SOBERANA: 480€**")
+    st.write("**BIZUM:** 603924829")
+    if st.button("ACTIVAR TERMINAL"):
+        st.success("Túnel Ético Abierto. Envíe aporte.")
+
+with col2:
+    st.subheader("?? MEDICINA & PATENTES")
+    st.write("Patentes de ADN Humano Descifrado.")
+    st.progress(95)
+
+st.markdown("---")
+st.caption("Cifrado K-1 Bucle Activo | Bilbao Nodo Alfa | © 2026 Frank-Aimar-Génesis")
+st.markdown("</div>", unsafe_allow_html=True)papadaytrading-hub/BANCO-GENESIS-SOBERANO
