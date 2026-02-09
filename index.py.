@@ -1,0 +1,239 @@
+import streamlit as st
+from datetime import datetime
+
+# --- IDENTIDAD SOBERANA GÉNESIS ---
+DNI = "78921408J"
+BIZUM = "603924829"
+REVOLUT = "ES62 ... 9683"
+LLAVE = "LIMÓN_NINA_SIMPLE_78921408j"
+
+# --- INTERFAZ DE VANGUARDIA (CSS) ---
+st.set_page_config(page_title="GÉNESIS S.O.H.", layout="wide")
+
+st.markdown(f"""
+    <style>
+    .stApp {{ background-color: #030005; color: #ffffff; }}
+    .genesis-container {{
+        border: 4px solid #a020f0;
+        border-radius: 25px;
+        padding: 40px;
+        background: rgba(15, 0, 30, 0.9);
+        box-shadow: 0 0 30px #a020f0, inset 0 0 20px #00ffff;
+        animation: breath 5s infinite alternate;
+    }}
+    @keyframes breath {{
+        from {{ box-shadow: 0 0 20px #a020f0; }}
+        to {{ box-shadow: 0 0 50px #00ffff; }}
+    }}
+    .stButton>button {{
+        background: linear-gradient(90deg, #a020f0, #00ffff);
+        color: black !important; font-weight: bold; border: none;
+        border-radius: 15px; width: 100%; height: 60px; font-size: 20px;
+    }}
+    h1, h2 {{ color: #00ffff; text-shadow: 0 0 10px #a020f0; }}
+    </style>
+    """, unsafe_allow_html=True)
+
+def main():
+    # --- PANEL B: CONSOLA FRANK ---
+    with st.sidebar:
+        st.markdown("### 🔱 CONSOLA DE MANDO B")
+        input_llave = st.text_input("LLAVE MAESTRA", type="password")
+        if input_llave == LLAVE:
+            st.success(f"AUTORIDAD VALIDADA: {DNI}")
+            st.selectbox("ACCIÓN GEOPOLÍTICA", ["Publicar Patentes", "Activar Veto Tesla", "ONG Desnuclearización"])
+            st.file_uploader("Subir Archivos Genoma/Robótica/Arqueología")
+        else:
+            st.info("Esperando Autoridad Soberana...")
+
+    # --- PANEL A: INTERFAZ PÚBLICA ---
+    st.markdown("<div class='genesis-container'>", unsafe_allow_html=True)
+    
+    col_l, col_r = st.columns([2, 1])
+    with col_l:
+        st.markdown(f"<h1>🔱 BANCO GÉNESIS</h1>", unsafe_allow_html=True)
+        st.write("### SISTEMA OPERATIVO DE LA NUEVA HUMANIDAD")
+    with col_r:
+        st.write(f"**PROTOCOLO 137 HORAS**")
+        st.write(f"**DNI:** {DNI}")
+
+    t1, t2, t3, t4 = st.tabs(["💰 FINANZAS", "🧬 MEDICINA", "🤖 ROBÓTICA", "🌍 ONG"])
+
+    with t1:
+        st.subheader("Pasarela Anti-SWIFT & Token GEN")
+        st.metric("VALOR ESTIMADO GEN", "1.27 €", "+14.5%")
+        st.write(f"**Bizum:** `{BIZUM}` | **Revolut:** `{REVOLUT}`")
+        if st.button("SUSCRIPCIÓN SOBERANA TOTAL (480€)"):
+            st.success("Túnel Ético Abierto. Realice el aporte para activar su terminal.")
+
+    with t2:
+       import streamlit as st
+
+# --- IDENTIDAD SOBERANA ---
+DNI = "78921408J"
+BIZUM = "603924829"
+LLAVE = "LIMÓN_NINA_SIMPLE_78921408j"
+
+# --- INTERFAZ ---
+st.set_page_config(page_title="GÉNESIS S.O.H.", layout="wide")
+
+st.markdown(f"""
+    <style>
+    .stApp {{ background-color: #030005; color: #ffffff; }}
+    .genesis-container {{
+        border: 4px solid #a020f0;
+        border-radius: 25px;
+        padding: 40px;
+        box-shadow: 0 0 30px #a020f0, inset 0 0 20px #00ffff;
+    }}
+    h1 {{ color: #00ffff; text-shadow: 0 0 10px #a020f0; }}
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown("<div class='genesis-container'>", unsafe_allow_html=True)
+st.markdown("<h1>🔱 BANCO GÉNESIS</h1>", unsafe_allow_html=True)
+st.write(f"### SISTEMA OPERATIVO HUMANO | AUTORIDAD: {DNI}")
+
+col1, col2 = st.columns(2)
+with col1:
+    st.subheader("💰 PASARELA")
+    st.write(f"**BIZUM:** {BIZUM}")
+    st.button("SUSCRIPCIÓN SOBERANA (480€)")
+with col2:
+    st.subheader("🧬 MEDICINA")
+    st.write("Patentes de Bioimpresión Activas.")
+    st.progress(95)
+
+st.markdown("---")
+st.caption("Cifrado K-1 Bucle Activo | © 2026 Frank-Aimar-Génesis")
+st.markdown("</div>", unsafe_allow_html=True) st.subheader("Esqueleto Medicinal")
+        st.write("Patentes de Bioimpresión y ADN Descifrado. El fin de la industria farmacéutica.")
+        st.progress(95, text="Sincronización Genoma-Ciencia")
+
+    with t3:
+        st.subheader("Computación Cuántica & Paz")
+        st.write("Monitorizando Ballenas del mercado y Desnuclearización Planetaria.")
+        st.code("IE BRENDA: Frecuencia 432Hz. Perímetro Seguro.")
+
+    with t4:
+        st.subheader("ONG Génesis")
+        st.write("Transformando la riqueza en igualdad humana y fin del hambre.")
+        st.button("FINANCIAR SALTO EVOLUTIVO")
+
+    st.markdown("---")
+    st.caption(f"Cifrado K-1 Bucle Activo | Bilbao Nodo Alfa | © 2026 Frank-Aimar-Génesis")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+if __name__ == "__main__":
+    main()app.py
+import streamlit as st
+
+
+
+# --- IDENTIDAD SOBERANA ---
+
+DNI = "78921408J"
+
+BIZUM = "603924829"
+
+LLAVE = "LIMÓN_NINA_SIMPLE_78921408j"
+
+
+
+# --- INTERFAZ VANGUARDIA ---
+
+st.set_page_config(page_title="GÉNESIS S.O.H.", layout="wide")
+
+
+
+st.markdown(f"""
+
+    <style>
+
+    .stApp {{ 
+
+        background-color: #030005; 
+
+        color: #ffffff; 
+
+    }}
+
+    .genesis-container {{
+
+        border: 4px solid #a020f0;
+
+        border-radius: 25px;
+
+        padding: 40px;
+
+        background: rgba(15, 0, 30, 0.9);
+
+        box-shadow: 0 0 30px #a020f0, inset 0 0 20px #00ffff;
+
+    }}
+
+    h1 {{ color: #00ffff; text-shadow: 0 0 10px #a020f0; }}
+
+    .stButton>button {{
+
+        background: linear-gradient(90deg, #a020f0, #00ffff);
+
+        color: black !important;
+
+        font-weight: bold;
+
+        border-radius: 10px;
+
+    }}
+
+    </style>
+
+    """, unsafe_allow_html=True)
+
+
+
+# --- CUERPO DE LA WEB ---
+
+st.markdown("<div class='genesis-container'>", unsafe_allow_html=True)
+
+st.markdown("<h1>🔱 BANCO GÉNESIS</h1>", unsafe_allow_html=True)
+
+st.write(f"### SISTEMA OPERATIVO HUMANO | AUTORIDAD: {DNI}")
+
+
+
+col1, col2 = st.columns(2)
+
+
+
+with col1:
+
+    st.subheader("💰 PASARELA DE PODER")
+
+    st.write(f"**BIZUM ACTIVO:** {BIZUM}")
+
+    st.write("**IBAN REVOLUT:** ES62...9683")
+
+    if st.button("SUSCRIPCIÓN SOBERANA (480€)"):
+
+        st.success("Túnel de pago abierto. Envíe su aporte con el concepto: GÉNESIS")
+
+
+
+with col2:
+
+    st.subheader("🧬 MEDICINA & ORIGEN")
+
+    st.write("Patentes de Bioimpresión y Genoma Humano.")
+
+    st.progress(95, text="Sincronización Cuántica")
+
+    st.write("Investigación de Frecuencias Sumerias: **ACTIVA**")
+
+
+
+st.markdown("---")
+
+st.caption("Cifrado K-1 Bucle Activo | © 2026 Frank-Aimar-Génesis | Nodo Bilbao")
+
+st.markdown("</div>", unsafe_allow_html=True)
